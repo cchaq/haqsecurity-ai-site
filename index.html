@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Haq Security AI</title>
-  <style>
-    /* Reset and base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haq Security AI</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
-      color: #e0e0e0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #00ffe1;
-      text-shadow: 0 0 10px #00ffe1;
-    }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00ffe1;
+            text-shadow: 0 0 10px #00ffe1;
+        }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 1.5rem;
-    }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 1.5rem;
+        }
 
-    a.email-link {
-      color: #00ffe1;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        a.email-link {
+            color: #00ffe1;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+        footer {
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>Haq Security AI</h1>
-  <p>To get started, click on the icon in the bottom right.</p>
-  <p>If you would like a chatbot for your business, please email <a class="email-link" href="mailto:chatbot@haqsecurity.com">chatbot@haqsecurity.com</a></p>
+    <h1>Haq Security AI</h1>
+    <p>To get started, click on the icon in the bottom right.</p>
+    <p>If you would like a chatbot for your business, please email <a class="email-link"
+            href="mailto:chatbot@haqsecurity.com">chatbot@haqsecurity.com</a></p>
 
-  <footer>
-    &copy; 2025 Haq Security AI. All rights reserved.
-  </footer>
+    <footer>
+        &copy; 2025 Haq Security AI. All rights reserved.
+    </footer>
 
 </body>
 <script type="module">
@@ -69,7 +72,7 @@
         apiHost: "https://aidev.haqsecurity.com",
     })
 </script>
- <script type="module">
+<script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
         chatflowid: "5fcffd35-4000-4e40-9996-06963cb387ef",
@@ -95,30 +98,12 @@
                     autoOpenOnMobile: false
                 }
             },
-            tooltip: {
-                showTooltip: true,
-                tooltipMessage: 'Hi There 👋!',
-                tooltipBackgroundColor: 'black',
-                tooltipTextColor: 'white',
-                tooltipFontSize: 16
-            },
-            disclaimer: {
-                title: 'Disclaimer',
-                message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
-                textColor: 'black',
-                buttonColor: '#3b82f6',
-                buttonText: 'Start Chatting',
-                buttonTextColor: 'white',
-                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
-                backgroundColor: 'white'
-            },
-            customCSS: ``,
             chatWindow: {
                 showTitle: true,
                 showAgentMessages: true,
-                title: 'Flowise Bot',
+                title: 'Haq Security AI Chatbot',
                 titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                welcomeMessage: 'Hello! This is custom welcome message',
+                welcomeMessage: 'Hello! How can I help?',
                 errorMessage: 'This is a custom error message',
                 backgroundColor: '#ffffff',
                 backgroundImage: 'enter image path or link',
@@ -126,8 +111,8 @@
                 width: 400,
                 fontSize: 16,
                 starterPrompts: [
-                    "What is a bot?",
-                    "Who are you?"
+                    "What is MFA?",
+                    "What is a VPN?"
                 ],
                 starterPromptFontSize: 15,
                 clearChatOnReload: false,
@@ -168,11 +153,12 @@
                 footer: {
                     textColor: '#303235',
                     text: 'Powered by',
-                    company: 'Flowise',
-                    companyLink: 'https://flowiseai.com'
+                    company: 'Haq Security',
+                    companyLink: 'https://ai.haqsecurity.com'
                 }
             }
         }
     })
 </script>
+
 </html>
