@@ -2,163 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haq Security AI</title>
-    <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haq Security AI</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-        }
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #00ffe1;
-            text-shadow: 0 0 10px #00ffe1;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
 
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 1.5rem;
-        }
+    nav a {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
 
-        a.email-link {
-            color: #00ffe1;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1;
+      text-align: center;
+    }
 
-        footer {
-            margin-top: 4rem;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+    .section {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    a.email-link {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .services {
+      margin: 4rem auto;
+    }
+
+    .service-card {
+      background-color: #1e1e2f;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 225, 0.2);
+    }
+
+    .service-card h3 {
+      color: #00ffe1;
+      margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .social-icons a img {
+      width: 48px;
+      height: 48px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="#top">Home</a>
+    <a href="https://blog.haqsecurity.com" target="_blank">Blog</a>
+    <a href="#socials">Socials</a>
+  </nav>
+
+  <!-- Title / Hero -->
+  <div id="top" class="section">
     <h1>Haq Security AI</h1>
     <p>To get started, click on the icon in the bottom right.</p>
-    <p>If you would like a chatbot for your business, please email <a class="email-link"
-            href="mailto:chatbot@haqsecurity.com">chatbot@haqsecurity.com</a></p>
+    <p>If you would like a chatbot for your business, please email
+      <a class="email-link" href="mailto:chatbot@haqsecurity.com">chatbot@haqsecurity.com</a>
+    </p>
+  </div>
 
-    <footer>
-        &copy; 2025 Haq Security AI. All rights reserved.
-    </footer>
+  <!-- Services Section -->
+  <section class="section services">
+    <h2 style="color: #00ffe1; margin-bottom: 1.5rem;">Our Services</h2>
 
-</body>
-<script type="module">
+    <div class="service-card">
+      <h3>DAST (Dynamic Application Security Testing)</h3>
+      <p>Detect vulnerabilities in your live applications with real-time analysis. DAST helps secure apps against attacks while in use.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>SAST (Static Application Security Testing)</h3>
+      <p>Analyze your source code before deployment. SAST helps developers find flaws early in the dev cycle—saving time and reducing risk.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>AI Assistants</h3>
+      <p>Custom-trained AI agents for automating tasks, improving support, and ensuring round-the-clock digital protection for your business.</p>
+    </div>
+  </section>
+
+  <!-- Socials Section -->
+  <section id="socials" class="section">
+    <h2 style="color: #00ffe1; margin-bottom: 1rem;">Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/haq_sec/" target="_blank" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://x.com/HaqSec" target="_blank" title="X / Twitter">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
+      </a>
+      <a href="https://www.youtube.com/@HaqSecurity" target="_blank" title="YouTube">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Haq Security AI. All rights reserved.
+  </footer>
+
+  <!-- Flowise Chatbot -->
+  <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
-        chatflowid: "5fcffd35-4000-4e40-9996-06963cb387ef",
-        apiHost: "https://aidev.haqsecurity.com",
-    })
-</script>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "5fcffd35-4000-4e40-9996-06963cb387ef",
-        apiHost: "https://aidev.haqsecurity.com",
-        chatflowConfig: {
-            /* Chatflow Config */
+      chatflowid: "5fcffd35-4000-4e40-9996-06963cb387ef",
+      apiHost: "https://aidev.haqsecurity.com",
+      chatflowConfig: {},
+      observersConfig: {},
+      theme: {
+        button: {
+          backgroundColor: '#00ffe1',
+          right: 20,
+          bottom: 20,
+          size: 48,
+          dragAndDrop: true,
+          iconColor: '#0f0f0f',
+          customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+          autoWindowOpen: {
+            autoOpen: true,
+            openDelay: 2,
+            autoOpenOnMobile: false
+          }
         },
-        observersConfig: {
-            /* Observers Config */
-        },
-        theme: {
-            button: {
-                backgroundColor: '#00ffe1',
-                right: 20,
-                bottom: 20,
-                size: 48,
-                dragAndDrop: true,
-                iconColor: '#0f0f0f',
-                customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                autoWindowOpen: {
-                    autoOpen: true,
-                    openDelay: 2,
-                    autoOpenOnMobile: false
-                }
-            },
-            chatWindow: {
-                showTitle: true,
-                showAgentMessages: true,
-                title: 'Haq Security AI Chatbot',
-                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                welcomeMessage: 'Hello! How can I help?',
-                errorMessage: 'This is a custom error message',
-                backgroundColor: '#1a1a2e',
-                backgroundImage: '',
-                height: 700,
-                width: 400,
-                fontSize: 16,
-                starterPrompts: [
-                    "What is MFA?",
-                    "What is a VPN?"
-                ],
-                starterPromptFontSize: 15,
-                clearChatOnReload: false,
-                sourceDocsTitle: 'Sources:',
-                renderHTML: true,
-                botMessage: {
-                    backgroundColor: '#2a2a40',
-                    textColor: '#00ffe1',
-                    showAvatar: true,
-                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
-                },
-                userMessage: {
-                    backgroundColor: '#00ffe1',
-                    textColor: '#0f0f0f',
-                    showAvatar: true,
-                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
-                },
-                textInput: {
-                    placeholder: 'Type your question',
-                    backgroundColor: '#0f0f0f',
-                    textColor: '#e0e0e0',
-                    sendButtonColor: '#00ffe1',
-                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
-                    autoFocus: true,
-                    sendMessageSound: true,
-                    sendSoundLocation: 'send_message.mp3',
-                    receiveMessageSound: true,
-                    receiveSoundLocation: 'receive_message.mp3'
-                },
-                feedback: {
-                    color: '#00ffe1'
-                },
-                dateTimeToggle: {
-                    date: true,
-                    time: true
-                },
-                footer: {
-                    textColor: '#888',
-                    text: 'Powered by',
-                    company: 'Haq Security',
-                    companyLink: 'https://ai.haqsecurity.com'
-                }
-            }
+        chatWindow: {
+          showTitle: true,
+          showAgentMessages: true,
+          title: 'Haq Security AI Chatbot',
+          titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+          welcomeMessage: 'Hello! How can I help?',
+          errorMessage: 'This is a custom error message',
+          backgroundColor: '#1a1a2e',
+          height: 700,
+          width: 400,
+          fontSize: 16,
+          starterPrompts: [
+            "What is MFA?",
+            "What is a VPN?"
+          ],
+          starterPromptFontSize: 15,
+          clearChatOnReload: false,
+          sourceDocsTitle: 'Sources:',
+          renderHTML: true,
+          botMessage: {
+            backgroundColor: '#2a2a40',
+            textColor: '#00ffe1',
+            showAvatar: true,
+            avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+          },
+          userMessage: {
+            backgroundColor: '#00ffe1',
+            textColor: '#0f0f0f',
+            showAvatar: true,
+            avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+          },
+          textInput: {
+            placeholder: 'Type your question',
+            backgroundColor: '#0f0f0f',
+            textColor: '#e0e0e0',
+            sendButtonColor: '#00ffe1',
+            maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+            autoFocus: true,
+            sendMessageSound: true,
+            sendSoundLocation: 'send_message.mp3',
+            receiveMessageSound: true,
+            receiveSoundLocation: 'receive_message.mp3'
+          },
+          feedback: {
+            color: '#00ffe1'
+          },
+          dateTimeToggle: {
+            date: true,
+            time: true
+          },
+          footer: {
+            textColor: '#888',
+            text: 'Powered by',
+            company: 'Haq Security',
+            companyLink: 'https://ai.haqsecurity.com'
+          }
         }
+      }
     })
-</script>
-
+  </script>
+</body>
 
 </html>
